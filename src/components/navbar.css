@@ -1,0 +1,78 @@
+.navbar {
+    background: #1f2937;
+    color: white;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* road */
+.road {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    position: relative;
+    background: linear-gradient(#444, #444) center/100% 3px no-repeat;
+}
+
+/* bus container */
+.bus {
+    position: absolute;
+    top: -10px;
+    left: -120px;
+    animation: moveBus 8s linear infinite;
+    display: flex;
+    align-items: center;
+}
+
+/* bus body */
+.bus-body {
+    background: #facc15;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+/* wheels */
+.wheel {
+    width: 14px;
+    height: 14px;
+    background: black;
+    border-radius: 50%;
+    margin: 0 4px;
+    animation: rotate 0.5s linear infinite;
+}
+
+/* animation bus moving */
+@keyframes moveBus {
+    0% {
+        left: -150px;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+/* wheel rotation */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.logo {
+    margin: 0;
+}
+
+.home {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    right: 20px;
+    top: 18px;
+}
